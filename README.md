@@ -14,4 +14,5 @@
   <b>Close</b> the blank note</i>
   <br>
   <i><b>Double Click</b> on any note to <b>Delete It.</b></i>
+  <br>
   <i>Click on the <b>Delete Notes</b> button to <b>Delete All</b> notes</i>
