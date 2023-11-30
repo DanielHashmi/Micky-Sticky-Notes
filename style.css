@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background-image: linear-gradient(to right, #00ffd78f, #fffe005c);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.allNotes {
+    height: 34vh;
+    width: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -39px;
+}
+.allNotes:hover{
+    cursor: pointer;
+}
+.note {
+    height: 266px;
+    width: 266px;
+    box-shadow: 3px 6px 15px -5px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 5px;
+    transform: rotate(350deg);
+    margin-left: 30px;
+    margin-top: 22px;
+}
+
+.note1 {
+    height: 266px;
+    width: 266px;
+    box-shadow: 3px 6px 15px -5px;
+    background-color: rgb(251, 255, 5);
+    border-radius: 5px;
+    transform: rotate(352deg);
+    margin-left: 30px;
+    margin-top: 22px;
+}
+
+.note2 {
+    height: 266px;
+    width: 266px;
+    box-shadow: 3px 6px 15px -5px;
+    background-color: rgb(6, 255, 199);
+    border-radius: 5px;
+    transform: rotate(338deg);
+    margin-left: 30px;
+    margin-top: 22px;
+}
+
+.note3 {
+    height: 266px;
+    width: 266px;
+    box-shadow: 3px 6px 15px -5px;
+    background-color: rgb(6, 184, 255);
+    border-radius: 5px;
+    transform: rotate(27deg);
+    margin-left: 30px;
+    margin-top: 22px;
+}
+
+.note4 {
+    height: 266px;
+    width: 266px;
+    box-shadow: 3px 6px 15px -5px;
+    background-color: rgb(255, 6, 201);
+    border-radius: 5px;
+    transform: rotate(2deg);
+    margin-left: 30px;
+    margin-top: 22px;
+}
+
+.note:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.note1:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.note3:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.note4:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.note2:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 100px;
+    font-family: cursive;
+    color: darkslategray;
+    margin-left: 12px;
+    box-shadow: 0px 0px 7px -5px;
+    margin-left: 0vw;
+}
+
+.createNote {
+    height: 46px;
+    width: 107px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-left: 9px;
+    font-size: 15px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 7px -5px;
+    background-image: linear-gradient(to right, #ebed0099, #cdffcd);
+}
+
+.deleteNotes {
+    height: 46px;
+    width: 107px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-left: 9px;
+    font-size: 15px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 7px -5px;
+    background-image: linear-gradient(to right, #ed100099, #cdffcd);
+}
+.deleteNotes:hover {
+    background-image: linear-gradient(to right, #ff251599, #ffcdf5);
+    cursor: pointer;
+}
+
+.createNote:hover {
+    background-image: linear-gradient(to right, #a4ff2391, #89ffd6);
+    cursor: pointer;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 83vw;
+    margin-right: 8vw;
+}
+
+.whiteDiv {
+    height: 367px;
+    width: 360px;
+    box-shadow: 1px 1px 3px 0px;
+    background-color: white;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.whiteHead {
+    border-bottom: 2px solid #00000017;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 37px;
+}
+
+.check {
+    height: 23px;
+    width: 24px;
+    border-radius: 18px;
+    border: 2px solid #80808030;
+    display: flex;
+    justify-content: center;
+    color: #80808099;
+    font-size: 19px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.check:hover {
+    background-color: rgba(216, 216, 216, 0.753);
+    cursor: pointer;
+}
+.cross:hover {
+    background-color: rgba(255, 136, 136, 0.678);
+    cursor: pointer;
+}
+
+.cross {
+    height: 23px;
+    width: 24px;
+    border-radius: 18px;
+    border: 2px solid #80808030;
+    display: flex;
+    justify-content: center;
+    color: #80808099;
+    font-size: 19px;
+    align-items: center;
+}
+
+.textArea {
+    height: 326px;
+    width: 359px;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    max-width: 306px;
+    max-height: 299px;
+}
+
+.h2 {
+    width: 100%;
+    word-wrap: break-word;
+    overflow: overlay;
+    overflow: overlay;
+    height: 100%;
+}
+
+.bigDivForWhiteDiv {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1330px) {
+    .note {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note1 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note2 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note3 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note4 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note:hover {
+        height: 28vw;
+    }
+
+    .note1:hover {
+        height: 28vw;
+    }
+
+    .note2:hover {
+        height: 28vw;
+    }
+
+    .note3:hover {
+        height: 28vw;
+    }
+
+    .note4:hover {
+        height: 28vwx;
+    }
+}
+
+@media(max-width:1000px) {
+    .note {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note1 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note2 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note3 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note4 {
+        height: 24vw;
+        width: 32vw;
+    }
+
+    .note:hover {
+        height: 28vw;
+    }
+
+    .note1:hover {
+        height: 28vw;
+    }
+
+    .note2:hover {
+        height: 28vw;
+    }
+
+    .note3:hover {
+        height: 28vw;
+    }
+
+    .note4:hover {
+        height: 28vw;
+    }
+}
+
+@media(max-width:700px) {
+    .note {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note1 {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note2 {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note3 {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note4 {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note:hover {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note1:hover {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note2:hover {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note3:hover {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .note4:hover {
+        height: 30vw;
+        width: 40vw;
+    }
+}
+
+
+@media(max-width:702px) {
+    .mainDiv {
+        margin-right: 17vw;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .allNotes {
+        height: 33vh;
+        width: 47vw;
+    }
+
+    .note {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note1 {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note2 {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note3 {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note4 {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note:hover {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note1:hover {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note2:hover {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note3:hover {
+        height: 33vw;
+        width: 31vw;
+    }
+
+    .note4:hover {
+        height: 33vw;
+        width: 31vw;
+    }
+}
+
+@media(max-width:345px) {
+    .header {
+        flex-direction: column;
+        height: 12vh;
+    }
+
+    .headDiv {
+        width: 245px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .whiteDiv {
+        height: 337px;
+        width: 259px;
+        max-width: 259px;
+        max-height: 337px;
+    }
+
+    .textArea {
+        max-width: 259px;
+        max-height: 300px;
+    }
+}

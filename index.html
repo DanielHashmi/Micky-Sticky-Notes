@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- Creating a header -->
+    <header class="header">
+        <!-- Head Name -->
+        <h1>Micky Sticky Notes</h1>
+        <!-- Div for buttons -->
+        <div class="headDiv">
+            <button class="createNote">Create Note</button>
+            <button class="deleteNotes">Delete Notes</button>
+        </div>
+    </header>
+
+
+    <!-- This is a div for inputs  -->
+    <div class="bigDivForWhiteDiv">
+        <!-- This is the main div we will add elements inside this div using JavaScript -->
+        <div class="mainDiv"></div>
+        <div class="whiteDiv">
+            <!-- this is the headDiv for whiteDiv -->
+            <header class="whiteHead">
+                <div class="check">V</div>
+                <div class="cross">X</div>
+            </header>
+            <!-- this is textArea for whiteDiv -->
+            <textarea class="textArea" cols="30" rows="10" placeholder="Will take coffee" autofocus></textarea>
+        </div>
+    </div>
+    <!-- script tag for JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
