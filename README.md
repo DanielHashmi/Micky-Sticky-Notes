@@ -1,6 +1,6 @@
 # Micky Sticky Notes
 
-  <b><i>Click on this link to open the Website - https://danielhashmi.github.io/Micky-Sticky-Notes/</i></b>
+  <b><i>Click this button to open the Project - <a href="https://danielhashmi.github.io/Micky-Sticky-Notes/">Open Project</a></i></b>
   <br>
   <br>
   <b><i>Instructions</i></b>
